@@ -8,7 +8,7 @@
       <link href="/UploadTextrue/"/>
       <url>/UploadTextrue/</url>
       
-        <content type="html"><![CDATA[<p><img src="upload.png" alt="上传插件"></p>]]></content>
+        <content type="html"><![CDATA[<p><img src="/UploadTextrue/upload.png" alt="上传插件"></p>]]></content>
       
       
       <categories>
