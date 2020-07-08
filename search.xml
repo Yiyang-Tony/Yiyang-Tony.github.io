@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>Encrypt</title>
+      <link href="/Encrypt/"/>
+      <url>/Encrypt/</url>
+      
+        <content type="html"><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a><center>前言</center></h2><ul><li><p>有时候我们可能需要写一些私密的博客，通过密码验证的方式让人不能随意浏览。</p></li><li><p>这在wordpress，emlog或其他博客系统中都很容易实现，然而hexo除外。</p></li><li><p>为了解决这个问题，我们需要安装“ hexo-blog-encrypt”扩展。</p><a id="more"></a></li></ul><h2 id="特性"><a href="#特性" class="headerlink" title="特性"></a>特性</h2><ul><li>一旦你输入了正确的密码，它就会被存储在本地浏览器的localStorage中。按个按钮，密码将会被清空。若博客中又脚本，它将被正确地执行。</li><li>支持按标签加密。</li><li>所有的核心功能都是由原生的API所提供的。在Node.js中，我们使用Crypto。在浏览器中，我们使用Web Crypto API。</li><li>PBKDF2，SHA256被用作复制密钥，AES256-CBC被用作加解密，我们还使用HMAC来验证密文的来源，并确保其纠正。</li><li>广泛地使用Promise来进行异步操作，从而确保线程不被杜塞。</li><li>过时的浏览器将无法正常显示，因此，请升级您的浏览器。</li></ul><h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install --save hexo-blog-encrypt</span><br></pre></td></tr></table></figure><h2 id="快速使用"><a href="#快速使用" class="headerlink" title="快速使用"></a>快速使用</h2><ul><li><strong>将“ password”添加到您的文章信息头就像这样</strong>：</li></ul><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">title: Hello World</span><br><span class="line">date: 2020-03-13 21:12:21</span><br><span class="line">password: muyiio</span><br><span class="line">---</span><br></pre></td></tr></table></figure><h2 id="按标签加密"><a href="#按标签加密" class="headerlink" title="按标签加密"></a>按标签加密</h2><ul><li><strong>修改文章信息头如下：</strong></li></ul><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">title: Hello World</span><br><span class="line">tags:</span><br><span class="line">- 加密文章tag</span><br><span class="line">date: <span class="number">2020</span>-<span class="number">03</span>-<span class="number">13</span> <span class="number">21</span>:<span class="number">12</span>:<span class="number">21</span></span><br><span class="line">password: muyiio</span><br><span class="line"><span class="keyword">abstract</span>: 这里有东西被加密了，需要输入密码查看哦。</span><br><span class="line">message: 您好，这里需要密码。</span><br><span class="line">wrong_pass_message: 抱歉，这个密码看着不太对，请再试试。</span><br><span class="line">wrong_hash_message: 抱歉，这个文章不能被纠正，不过您还是能看看解密后的内容。</span><br><span class="line">---</span><br></pre></td></tr></table></figure>]]></content>
+      
+      
+      <categories>
+          
+          <category> 插件 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> plug </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>MouseLove</title>
       <link href="/MouseLove/"/>
       <url>/MouseLove/</url>
